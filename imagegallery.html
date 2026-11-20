@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <h1>My Image Gallery</h1>
+    <button id="themeBtn">🌙 / ☀️ Theme</button>
+  </header>
+
+  <div class="search-wrap">
+    <input type="text" id="search" placeholder="Search images..." />
+  </div>
+
+  <div id="filters"></div>
+
+  <main id="gallery"></main>
+
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <button id="close" aria-label="Close">&times;</button>
+    <button id="prev" aria-label="Previous">&#10094;</button>
+    <div class="lb-box">
+      <img id="lbImg" src="" alt="" />
+      <p id="lbCaption"></p>
+    </div>
+    <button id="next" aria-label="Next">&#10095;</button>
+  </div>
+
+  <script src="photo.js"></script>
+</body>
+</html>
